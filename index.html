@@ -55,6 +55,8 @@
 	<div class="loader">
 		<div class="project-loader">
 			<div class="bubblingG">
+				<img src="img/logo no background.png" width="400px"/>
+				<p>RELTA</p>
 				<span id="bubblingG_1"></span>
 				<span id="bubblingG_2"></span>
 				<span id="bubblingG_3"></span>
@@ -71,11 +73,11 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right animate">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a id="menu-1" onclick="recarregar('#')"></a></li>
+						<li><a id="menu-2" onclick="recarregar('#services')"></a></li>
+						<li><a id="menu-3" onclick="recarregar('#portfolio')"></a></li>
+						<li><a id="menu-4" onclick="recarregar('#about')"></a></li>
+						<li><a id="menu-5" onclick="recarregar('#contact')"></a></li>
 						<li>
 							<span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
 								<a onclick="lang_EN()">EN</a></span>
@@ -91,21 +93,21 @@
 
 					<ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 5">
 						<li>
-							<img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+							<img src="img/Banner/banner1.png" alt="Banner 1" uk-cover>
 							<div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
 								<h3 id="banner-1"class="uk-margin-remove"></h3>
 								<p id="banner-msg-1" class="uk-margin-remove"></p>
 							</div>
 						</li>
 						<li>
-							<img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+							<img src="img/Banner/banner2.png" alt="" uk-cover>
 							<div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
 								<h3 id="banner-2"class="uk-margin-remove"></h3>
 								<p id="banner-msg-2" class="uk-margin-remove"></p>
 							</div>
 						</li>
 						<li>
-							<img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover>
+							<img src="img/Banner/banner3.png" alt="" uk-cover>
 							<div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
 								<h3 id="banner-3"class="uk-margin-remove"></h3>
 								<p id="banner-msg-3" class="uk-margin-remove"></p>
@@ -182,90 +184,107 @@
 								<!-- uk-child-width-1-2@s ajuste resolucao maior que 640x; uk-child-width-1-6@l ajuste resolucao maior que 1200 -->
 								<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-1@s uk-child-width-1-4@l">
 									<li class="uk-transition-toggle" tabindex="0">
-										<div class="uk-card uk-card-default">
-											<div class="uk-card-media-top">
-												<a href=""><img src="img/portfolio/casaGP/Capa.jpg" alt=""></a>
-											</div>
-											<div class="uk-card-body">
-												<a id="port_op_1"class="uk-link-heading uk-button-text oc-heading-small" href=""></a>
-												<p id="port_op_1_desc"></p>
-												<div class="uk-visible@l uk-margin-small-bottom">	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-													<a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <a href="portfolio/casa-gp.html"><img src="img/portfolio/casaGP/Capa.jpg" alt=""></a>
+                                            </div>
+                                            <div class="uk-card-body">
+                                                <a id="port_op_1"class="uk-link-heading uk-button-text oc-heading-small" href="portfolio/casa-gp.html"></a>
+                                                <p id="port_op_1_desc"></p>
+                                                <div class="uk-visible@l uk-margin-small-bottom">   
+                                                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>  
+                                                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                                                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                                                    <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="uk-transition-toggle" tabindex="0">
+											<div class="uk-card uk-card-default">
+												<div class="uk-card-media-top">
+													<a href="portfolio/casa-verde.html"><img src="img/portfolio/Casa Verde/Capa.JPG" alt=""></a>
+												</div>
+												<div class="uk-card-body">
+													<a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small" href="portfolio/casa-verde.html"></a>
+													<p id="port_op_2_desc"></p>
+													<div class="uk-visible@l uk-margin-small-bottom">   
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>  
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+														<a href="" class="uk-icon-button " uk-icon="twitter"></a>
+													</div>
 												</div>
 											</div>
-										</div>
-									</li>
+										</li>
+										<li class="uk-transition-toggle" tabindex="0">
+											<div class="uk-card uk-card-default">
+												<div class="uk-card-media-top">
+													<a href="portfolio/ccsp.html"><img src="img/portfolio/ccsp/Capa.jpg" alt=""></a>
+												</div>
+												<div class="uk-card-body">
+													<a id="port_op_3" class="uk-link-heading uk-button-text oc-heading-small" href="portfolio/ccsp.html"></a>
+													<p id="port_op_3_desc"></p>
+													<div class="uk-visible@l uk-margin-small-bottom">   
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>  
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+														<a href="" class="uk-icon-button " uk-icon="twitter"></a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="uk-transition-toggle" tabindex="0">
+											<div class="uk-card uk-card-default">
+												<div class="uk-card-media-top">
+													<a href="portfolio/guarulhos.html"><img src="img/portfolio/Guarulhos/Capa.jpg" alt=""></a>
+												</div>
+												<div class="uk-card-body">
+													<a id="port_op_4" class="uk-link-heading uk-button-text oc-heading-small" href="portfolio/guarulhos.html"></a>
+													<p id="port_op_4_desc"></p>
+													<div class="uk-visible@l uk-margin-small-bottom">   
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>  
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+														<a href="" class="uk-icon-button " uk-icon="twitter"></a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="uk-transition-toggle" tabindex="0">
+											<div class="uk-card uk-card-default">
+												<div class="uk-card-media-top">
+													<a href="portfolio/vila-madalena.html"><img src="img/portfolio/vl madalena/Capa.jpg" alt=""></a>
+												</div>
+												<div class="uk-card-body">
+													<a id="port_op_5" class="uk-link-heading uk-button-text oc-heading-small" href="portfolio/vila-madelana.html"></a>
+													<p id="port_op_5_desc"></p>
+													<div class="uk-visible@l uk-margin-small-bottom">   
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>  
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+														<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+														<a href="" class="uk-icon-button " uk-icon="twitter"></a>
+													</div>
+												</div>
+											</div>
+										</li>
 									<li class="uk-transition-toggle" tabindex="0">
-										<div class="uk-card uk-card-default">
-											<div class="uk-card-media-top">
-												<a href=""><img src="img/portfolio/Casa Verde/Capa.JPG" alt=""></a>
-											</div>
-											<div class="uk-card-body">
-												<a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small" href=""></a>
-												<p id="port_op_2_desc"></p>
-												<div class="uk-visible@l uk-margin-small-bottom">	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-													<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="uk-transition-toggle" tabindex="0">
-										<div class="uk-card uk-card-default">
-											<div class="uk-card-media-top">
-												<a href=""><img src="img/portfolio/ccsp/Capa.jpg" alt=""></a>
-											</div>
-											<div class="uk-card-body">
-												<a id="port_op_3" class="uk-link-heading uk-button-text oc-heading-small" href=""></a>
-												<p id="port_op_3_desc"></p>
-												<div class="uk-visible@l uk-margin-small-bottom">	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-													<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="uk-transition-toggle" tabindex="0">
-										<div class="uk-card uk-card-default">
-											<div class="uk-card-media-top">
-												<a href=""><img src="img/portfolio/Guarulhos/Capa.jpg" alt=""></a>
-											</div>
-											<div class="uk-card-body">
-												<a id="port_op_4" class="uk-link-heading uk-button-text oc-heading-small" href=""></a>
-												<p id="port_op_4_desc"></p>
-												<div class="uk-visible@l uk-margin-small-bottom">	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-													<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="uk-transition-toggle" tabindex="0">
-										<div class="uk-card uk-card-default">
-											<div class="uk-card-media-top">
-												<a href=""><img src="img/portfolio/vl madalena/Capa.jpg" alt=""></a>
-											</div>
-											<div class="uk-card-body">
-												<a id="port_op_5" class="uk-link-heading uk-button-text oc-heading-small" href=""></a>
-												<p id="port_op_5_desc"></p>
-												<div class="uk-visible@l uk-margin-small-bottom">	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>	
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-													<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-													<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-												</div>
-											</div>
-										</div>
-									</li>
+                                            <div class="uk-card uk-card-default">
+                                                <div class="uk-card-media-top">
+                                                    <a href="portfolio/esv.html"><img src="img/portfolio/ESV/Capa.png" alt=""></a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <a id="port_op_6" class="uk-link-heading uk-button-text oc-heading-small" href="portfolio/esv.html"></a>
+                                                    <p id="port_op_6_desc">Descricao da Obra</p>
+                                                    <div class="uk-visible@l uk-margin-small-bottom">   
+                                                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>  
+                                                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                                                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                                                        <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
 
 									<!-- fim Portifolio -->
 								</div>
@@ -283,296 +302,6 @@
 						</div>
 					</section>	
 					<!-- FIM Portifolio-->
-        <!-- Paginacao 
-			<div class="uk-margin-medium-top uk-position-relative uk-position-bottom-center">
-				<ul class="uk-pagination" uk-margin>
-					<li><a href="#"><span uk-pagination-previous></span></a></li>
-					<li class="uk-active m-titulo"><a href="#">1</a></li>
-					<li class="uk-disabled m-titulo"><span>...</span></li>
-					<li class="m-titulo"><a href="#">4</a></li>
-					<li class="m-titulo"><a href="#">5</a></li>
-					<li><a href="#"><span uk-pagination-next></span></a></li>
-				</ul>
-			</div>
-			FIM paginacao -->
-						<!--
-						<div class="centered-pills">
-							<ul class="nav nav-pills">
-								<li class="filter" data-filter="all">
-									<a id="port_op_1" href="javascript:void(0)"></a>
-								</li>
-								<li class="filter" data-filter="VLMADALENA">
-									<a id="port_op_2" href="javascript:void(0)"></a>
-								</li>
-								<li class="filter" data-filter="BERÇARIO">
-									<a id="port_op_3" href="javascript:void(0)"></a>
-								</li>
-								<li class="filter" data-filter="GUARULHOS">
-									<a id="port_op_4" href="javascript:void(0)"></a>
-								</li>
-								<li class="filter" data-filter="RESANABRENO">
-									<a id="port_op_5" href="javascript:void(0)"></a>
-								</li>
-								<li class="filter" data-filter="CASAVERDE">
-									<a id="port_op_6" href="javascript:void(0)"></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="container"> </div>
-					<div>
-						<ul class="full-portfolio clearfix" id="Grid">
-							<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item VLMADALENA">
-
-								<img src="img/portfolio/vl madalena/11416404_468759806665024_3026927471953987087_o.jpg" class="img-responsive" alt="">
-								<div class="mask">
-								</div>
-								<div class="mask"></div>
-							</a>
-						</li>
-						<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-							<img src="img/portfolio/ccsp/IMG-20141116-WA0018.jpg" class="img-responsive" alt="">
-							<div class="mask">
-
-							</div>
-						</a>
-					</li>
-					<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-						<img src="img/portfolio/Guarulhos/2013-01-03 12.01.03.jpg" class="img-responsive" alt="">
-						<div class="mask">
-
-						</div>
-					</a>
-				</li>
-				<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-					<img src="img/portfolio/casaGP/13047925_468779789996359_5206660467842735981_o.jpg" class="img-responsive" alt="">
-					<div class="mask">
-					</div>
-				</a>
-			</li>
-			<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item VLMADALENA">
-
-				<img src="img/portfolio/vl madalena/2013-02-05 11.33.49.jpg" class="img-responsive" alt="">
-				<div class="mask">
-
-				</div>
-			</a>
-		</li>
-		<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item VLMADALENA">
-
-			<img src="img/portfolio/vl madalena/2012-05-29 17.45.35.jpg" class="img-responsive" alt="">
-			<div class="mask">
-
-			</div>
-		</a>
-	</li>
-	<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-		<img src="img/portfolio/ccsp/IMG-20141116-WA0014.jpg" class="img-responsive" alt="">
-		<div class="mask">
-
-		</div>
-	</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2013-01-03 14.01.53.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/13055448_468779733329698_5974617137443376115_n.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item VLMADALENA">
-
-	<img src="img/portfolio/vl madalena/2013-02-05 11.31.27.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item VLMADALENA">
-
-	<img src="img/portfolio/vl madalena/2013-02-05 11.20.28.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item VLMADALENA">
-
-	<img src="img/portfolio/vl madalena/2012-06-01 10.21.37.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-	<img src="img/portfolio/ccsp/IMG-20141116-WA0019.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-	<img src="img/portfolio/ccsp/IMG-20141116-WA0017.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-	<img src="img/portfolio/ccsp/IMG-20141116-WA0004.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-	<img src="img/portfolio/ccsp/IMG-20141116-WA0015.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item BERÇARIO">
-
-	<img src="img/portfolio/ccsp/IMG-20141116-WA0009.jpg" class="img-responsive" alt="">
-	<div class="mask">
-
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2013-01-03 18.58.27.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2013-01-03 21.26.35.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2013-01-03 18.54.02.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2013-01-03 21.23.18.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2012-12-20 10.51.34.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item GUARULHOS">
-
-	<img src="img/portfolio/Guarulhos/2013-01-03 21.32.18.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/13076723_468779646663040_6531333603476903272_n.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/13077039_468779599996378_4175804036932050416_n.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/13082691_468779746663030_4002360392711660472_n.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/13103304_468779283329743_7693866904104770253_n.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/2013-03-07 11.15.22.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item RESANABRENO">
-
-	<img src="img/portfolio/casaGP/13043360_468637350010603_7492322661828290959_n.jpg" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item CASAVERDE">
-
-	<img src="img/portfolio/Casa Verde/DSCN2912.JPG" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item CASAVERDE">
-
-	<img src="img/portfolio/Casa Verde/DSCN2929.JPG" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item CASAVERDE">
-
-	<img src="img/portfolio/Casa Verde/DSCN2927.JPG" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-<li class="mix col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item CASAVERDE">
-
-	<img src="img/portfolio/Casa Verde/DSCN2919.JPG" class="img-responsive" alt="">
-	<div class="mask">
-	</div>
-</a>
-</li>
-
-
-</ul>
--->
 
 <div class="mask"></div>
 </a>			</div>
@@ -748,7 +477,7 @@
 					<a href="#"><i class="fa fa-youtube"></i></a>
 				</li>
 			</ul>
-			<a href="#home" class="square-l goup" style="position: relative">
+			<a href="" class="square-l goup" style="position: relative">
 				<span>
 					<span class="fa fa-angle-double-up fa-2x"></span>
 					<span class="fa fa-angle-double-up fa-2x"></span>
@@ -773,6 +502,7 @@
 <script type="text/javascript" src="js/uikit-icons.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="js/grid.js"></script>
+<script type="text/javascript" src="js/port.js"></script>
 <script>
 	$(function() {
 		Grid.init();

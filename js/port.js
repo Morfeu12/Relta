@@ -15,11 +15,14 @@
 
 	function addClass(id,add){
 		var newclass = document.querySelector(id)
-		newclass.classList.add(add)
-		
+		newclass.classList.add(add)	
 	}
 
 	function remClass(id,add){
 		var newclass = document.querySelector(id)
 		newclass.classList.remove(add)
+	}
+	function recarregar(url){
+		window.location.href = url
+		
 	}

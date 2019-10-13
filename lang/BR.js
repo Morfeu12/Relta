@@ -1,5 +1,10 @@
 //Variaveis, cada texto tem uma variavel
-var banner_1 = "teste",
+var home = "Página Inicial",
+	services = "Serviços",
+	portfolio = "Portfólio",
+	about = "Sobre Nós",
+	contact = "Contato",
+	banner_1 = "teste",
 	banner_msg_1 = "teste",
 	banner_2 = "",
 	banner_msg_2 = "",
@@ -20,7 +25,7 @@ var banner_1 = "teste",
 	port_op_3 = "CCSP",
 	port_op_4 = "Guarulhos",
 	port_op_5 = "Vl. Madalena",
-	port_op_6 = "",
+	port_op_6 = "ESV",
 	port_op_1_desc = "Descricao da Obra.",
 	port_op_2_desc = "Descricao da Obra.",
 	port_op_3_desc = "Descricao da Obra.",
@@ -29,7 +34,7 @@ var banner_1 = "teste",
 	port_op_6_desc = "Descricao da Obra.",
 	port_pergunta = "VOCÊ GOSTOU DO NOSSO PORTIFÓLIO?",
 	port_resposta = "Entre em contato agora mesmo e ficaremos satisfeitos em lhe atender.",
-	btn_contato = "Contact Us",
+	btn_contato = "ENTRE EM CONTATO CONOSCO",
 	sobre_titulo = "QUEM NÓS SOMOS",
 	sobre_subtitulo = "SOBRE NÓS",
 	sobre_msg = "Fundada por Felipe Alves e Raquel Freitas, a Relta Arquitutra desenvolve projetos em diálogo com a natureza e em contato com as devidas intenções, visando todas as necessidades de seus clientes. Felipe e Raquel trabalham juntos desde 2014, mas somente em 2016 ambos decidem fundar a sociedade empresarial.",
@@ -64,7 +69,7 @@ var banner_1 = "teste",
 	form_tel = "Telefone:",
 	form_msg = "Mensagem:",
 	form_btn = "Enviar",
-	copyright = "©Copyright <a href='http://www.relta.com.br/'>Relta.com</a> 2014 All rights reserved";
+	copyright = "©Copyright <a href='http://www.relta.com.br/'>Relta.com</a> 2014 All rights reserved <br/> By: <a href='https://www.linkedin.com/in/omarcosta152'>Omar Costa";
 	
 //Funcao verifica e altera o valor do elemnto HTML
 function validaID (id, valor){
@@ -98,6 +103,11 @@ function validaBtn (id, valor){
 }
 
 //Atribui o valor da variavel no ID (html)
+this.validaID('#menu-1', home);
+this.validaID('#menu-2', services);
+this.validaID('#menu-3', portfolio);
+this.validaID('#menu-4', about);
+this.validaID('#menu-5', contact);
 this.validaID('#banner-1', banner_1);
 this.validaID('#banner-2', banner_2);
 this.validaID('#banner-3', banner_3);

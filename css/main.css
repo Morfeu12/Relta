@@ -45,7 +45,7 @@ a:focus {
 }
 
 .navbar-smak {
-	background: rgba(19, 19, 22, 0.2);
+	background: rgba(19, 19, 22, 0.5);
 	transition: all 0.5s;
 }
 
@@ -83,7 +83,7 @@ a:focus {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus,
 .navbar-nav > li.active > a {
-	color: #ffe600;
+	/*color: #ffe600;*/
 	background: transparent;
 }
 
@@ -1130,8 +1130,9 @@ footer .to-top {
 }
 .bubblingG {
 	text-align: center;
-	width: 80px;
-	height: 50px;
+	width: 150px;
+	height: 30px;
+	top: -10%;
 }
 .bubblingG span {
 	display: inline-block;
@@ -1295,7 +1296,7 @@ RESPONSIVE
 
 .loader{
 	display: block;
-	background: #ffe600;
+	background:#fffa65; /*#ffe600*/
 	position:fixed; 
 	top:0; left:0; right:0; bottom:0;
 	width:100%; 
@@ -1310,7 +1311,7 @@ RESPONSIVE
 
 .loader .bubblingG{
 	position:absolute;
-	top:50%;
+	top:40%;
 	left:50%;
 	margin-top:-20px;
 	margin-left:-40px;
@@ -1389,14 +1390,7 @@ RESPONSIVE
     display: inline-block;
     margin-top: 10px;
 }
-#about>div.container>div.row>div>div{
-	 display: inline-grid;
-    text-align: center;
-    text-align: -webkit-center;
-}
-#contato-email{
-	padding-left:20%;
-}
-#contato-tel{
-	padding-right:20%;
+#about > div.container > div.row > div > div{
+	display: grid;
+	text-align: center;
 }
