@@ -24,5 +24,4 @@
 	}
 	function recarregar(url){
 		window.location.href = url
-		
 	}
