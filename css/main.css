@@ -1296,7 +1296,7 @@ RESPONSIVE
 
 .loader{
 	display: block;
-	background:#fffa65; /*#ffe600*/
+	background:#000A; /*#ffe600 | #fffa65 */
 	position:fixed; 
 	top:0; left:0; right:0; bottom:0;
 	width:100%; 
@@ -1315,6 +1315,10 @@ RESPONSIVE
 	left:50%;
 	margin-top:-20px;
 	margin-left:-40px;
+}
+body > div.loader > div > div > p{
+	font-size: 22pt;
+    color: #ddd;
 }
 
 .removing{
