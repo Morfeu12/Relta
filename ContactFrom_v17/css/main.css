@@ -535,6 +535,10 @@ b {
   color: #888;
   font-size: 20px;
 }
+.display-btn-initial{
+  display: initial;
+  font-size: 11pt;
+}
 .divFixed{
   position: fixed;
   top:10%;
@@ -543,3 +547,4 @@ b {
   position: fixed;
   bottom: 15%;
 }
+

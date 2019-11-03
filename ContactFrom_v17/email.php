@@ -35,7 +35,7 @@ $hora_envio = date('H:i:s');
       table-layout:fixed;     
     }
     .tbl-content{
-      height:300px; /*Altura do display da tabela*/
+      height:400px; /*Altura do display da tabela*/
       overflow-x:auto;
       margin-top: 0px;
       border: 1px solid rgba(6,6,6,0.2);
@@ -63,7 +63,7 @@ $hora_envio = date('H:i:s');
   <body>
       <section>
         <h1>Relta - Contato pelo Site</h1>
-        <p>'$nome<span>$email</p>
+        <p>$nome - $email</p>
         <div class='tbl-header'>
           <table cellpadding='0' cellspacing='0' border='0'>
             <thead>
@@ -120,12 +120,6 @@ $hora_envio = date('H:i:s');
   $enviado_sucesso = "
     <html>
     <head>
-    <script>
-        function Recarregar(){
-          window.location.href = '../index.html';
-        }
-        Recarregar();
-      </script>
       <meta http-equiv='refresh' content='10;URL=index.php'>
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css' />
     </head>
@@ -134,6 +128,7 @@ $hora_envio = date('H:i:s');
         <div class='uk-card uk-card-primary uk-card-hover uk-card-body uk-light'>
             <h3 class='uk-card-title'><span class='uk-margin-small-right' uk-icon='check'></span>E-mail enviado com sucesso!!!</h3>
             <p>Agradecemos a preferência. Em breve entraremos em contato.</p>
+            <p>Clique no <b>X</b> para fechar.</p>
             <p>Equipe Relta</p>
         </div>
       </div>
@@ -162,7 +157,7 @@ $hora_envio = date('H:i:s');
 //enviar
    
   // emails para quem será enviado o formulário
-  $emailenviar = "omarcosta152@gmail.com";
+  $emailenviar = "contato@relta.com.br";
   $destino = $emailenviar;
   $assunto = "Contato pelo Site";
   $nomeContato = $nome;
