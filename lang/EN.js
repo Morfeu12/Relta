@@ -32,8 +32,8 @@ var home = "Home",
 	port_op_4_desc = "Descricao da Obra.",
 	port_op_5_desc = "Descricao da Obra.",
 	port_op_6_desc = "Descricao da Obra.",
-	port_pergunta = "DID YOU LIKE OUR PORTIFOLIO?",
-	port_resposta = "Contact us now and we will be happy to serve you.",
+	parceiro_titulo = "Partners",
+	parceiro_desc = "",
 	btn_contato = "Contact Us",
 	sobre_titulo = "WHO WE ARE",
 	sobre_subtitulo = "ABOUT US",
@@ -136,8 +136,8 @@ this.validaID('#port_op_3_desc', port_op_3_desc);
 this.validaID('#port_op_4_desc', port_op_4_desc);
 this.validaID('#port_op_5_desc', port_op_5_desc);
 this.validaID('#port_op_6_desc', port_op_6_desc);
-this.validaID('#port_pergunta', port_pergunta);
-this.validaID('#port_resposta', port_resposta);
+this.validaID('#parceiro_titulo', parceiro_titulo);
+this.validaID('#parceiro_desc', parceiro_desc);
 this.validaID('#btn_contato', btn_contato);
 this.validaID('#sobre_titulo', sobre_titulo);
 this.validaID('#sobre_subtitulo', sobre_subtitulo);

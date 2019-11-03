@@ -10,6 +10,12 @@ var home = "Home",
 	banner_msg_2 = "",
 	banner_3 = "",
 	banner_msg_3 = "",
+	desc_CasaVerde = "Construction of a single-family residence to better accommodate a foreign family. We carry out the projects for the execution, from the foundation until the conclusion of the work.",
+	desc_CasaGP = "",
+	desc_ccsp = "",
+	desc_esv = "Interior renovation due to the change of company headquarters. We had the need to meet all the requested spaces with a designer vision and entertainment in the workspaces. An especially laid back company!",
+	desc_guarulhos = "",
+	desc_vilamadalena = "",
 	txtlocation = "Location:",
 	txtproject = "Project Date:",
 	txtarea = "Area:",
@@ -68,6 +74,12 @@ this.validaID('#banner-3', banner_3);
 this.validaID('#banner-msg-1', banner_msg_1);
 this.validaID('#banner-msg-2', banner_msg_2);
 this.validaID('#banner-msg-3', banner_msg_3);
+this.validaID('#desc_CasaVerde', desc_CasaVerde);
+this.validaID('#desc_CasaGP', desc_CasaGP);
+this.validaID('#desc_ccsp', desc_ccsp);
+this.validaID('#desc_esv', desc_esv);
+this.validaID('#desc_guarulhos', desc_guarulhos);
+this.validaID('#desc_vilamadalena', desc_vilamadalena);
 this.validaID('#txtlocation', txtlocation);
 this.validaID('#txtproject', txtproject);
 this.validaID('#txtarea', txtarea);

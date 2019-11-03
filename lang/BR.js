@@ -32,8 +32,8 @@ var home = "Página Inicial",
 	port_op_4_desc = "Descricao da Obra.",
 	port_op_5_desc = "Descricao da Obra.",
 	port_op_6_desc = "Descricao da Obra.",
-	port_pergunta = "VOCÊ GOSTOU DO NOSSO PORTIFÓLIO?",
-	port_resposta = "Entre em contato agora mesmo e ficaremos satisfeitos em lhe atender.",
+	parceiro_titulo = "Parceiros",
+	parceiro_desc = "",
 	btn_contato = "ENTRE EM CONTATO CONOSCO",
 	sobre_titulo = "QUEM SOMOS",
 	sobre_subtitulo = "SOBRE NÓS",
@@ -136,8 +136,8 @@ this.validaID('#port_op_3_desc', port_op_3_desc);
 this.validaID('#port_op_4_desc', port_op_4_desc);
 this.validaID('#port_op_5_desc', port_op_5_desc);
 this.validaID('#port_op_6_desc', port_op_6_desc);
-this.validaID('#port_pergunta', port_pergunta);
-this.validaID('#port_resposta', port_resposta);
+this.validaID('#parceiro_titulo', parceiro_titulo);
+this.validaID('#parceiro_desc', parceiro_desc);
 this.validaID('#btn_contato', btn_contato);
 this.validaID('#sobre_titulo', sobre_titulo);
 this.validaID('#sobre_subtitulo', sobre_subtitulo);

@@ -1,4 +1,4 @@
-function menuNavegacao(id){
+function menuNavegacao(id) {
     var menuNav = `
     <!-- Fixed navbar -->
     <div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
@@ -72,49 +72,16 @@ function menuNavegacao(id){
         <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
     </div>`,
-    element = !!document.querySelector(id),
-	el = document.querySelector(id)
-	if(element){
-		el.innerHTML = menuNav
-	} else {
-		console.log("O ID "+id+" nao existe!")
-	}
+        element = !!document.querySelector(id),
+        el = document.querySelector(id)
+    if (element) {
+        el.innerHTML = menuNav
+    } else {
+        console.log("O ID " + id + " nao existe!")
+    }
 }
-function rodape(){
-    var rodape = `
-            <div class="container">
-                <p id="copyright">©Copyright <a href='http://www.relta.com.br/'>Relta.com</a> 2014 All rights
-                    reserved<br />
-                    By: <a href="https://www.linkedin.com/in/omarcosta152">Omar Costa</a></p>
-                <ul class="social-list">
-                    <li class="facebook">
-                        <a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="twitter">
-                        <a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="dribbble">
-                        <a href="http://goo.gl/k9zAy5"> <i class="fa fa-dribbble"></i></a>
-                    </li>
-                    <li class="youtube">
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                    </li>
-                </ul>
-                <a href="#banner-1" class="square-l goup" style="position: relative">
-                    <span>
-                        <span class="fa fa-angle-double-up fa-2x"></span>
-                    </span>
-                </a>
-            </div>`,
-            element = !!document.querySelector('footer'),
-	        el = document.querySelector('footer')
-	        if(element){
-		        el.innerHTML = rodape
-	        } else {
-		        console.log("A tag <footer> nao existe!")
-	        }
-}
-function addPortfolio(id){
+
+function addPortfolio(id) {
     var port = `
     <!-- Inicio partifolio -->
     <section id="more-port" style="margin-bottom: 30px;">
@@ -285,10 +252,40 @@ function addPortfolio(id){
     <!-- FIM Portifolio-->
     `
     element = !!document.querySelector(id),
-	el = document.querySelector(id)
-	if(element){
-		el.innerHTML = port
-	} else {
-		console.log("O ID "+id+" nao existe!")
-	}
+        el = document.querySelector(id)
+    if (element) {
+        el.innerHTML = port
+    } else {
+        console.log("O ID " + id + " nao existe!")
+    }
+}
+function rodape() {
+    var rodape = `
+    <p id="copyright">©Copyright <a href='http://www.relta.com.br/'>Relta.com</a> 2020 All rights reserved<br />
+    By: <a href="https://www.linkedin.com/in/omarcosta152">Omar Costa</a></p>
+    <div class="uk-flex-inline">
+        <div class="uk-margin-top">
+            <a href="www.instagram.com/reltaarquitetura" target="_black" uk-icon="icon: instagram; ratio: 1.5" class="uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="instagram"><path d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"></path><circle cx="14.87" cy="5.26" r="1.09"></circle><path d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"></path></svg></a>
+        </div>
+        <div class="uk-margin uk-margin-left">
+            <a href="#" target="_black" uk-icon="icon: facebook; ratio: 1.5" class="uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook"><path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg></a>
+        </div>
+        <div class="uk-margin uk-margin-left">
+            <a href="https://api.whatsapp.com/send?phone=5511942932035" target="_black" uk-icon="icon: whatsapp; ratio: 1.5" class="uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="whatsapp"><path d="M16.7,3.3c-1.8-1.8-4.1-2.8-6.7-2.8c-5.2,0-9.4,4.2-9.4,9.4c0,1.7,0.4,3.3,1.3,4.7l-1.3,4.9l5-1.3c1.4,0.8,2.9,1.2,4.5,1.2 l0,0l0,0c5.2,0,9.4-4.2,9.4-9.4C19.5,7.4,18.5,5,16.7,3.3 M10.1,17.7L10.1,17.7c-1.4,0-2.8-0.4-4-1.1l-0.3-0.2l-3,0.8l0.8-2.9 l-0.2-0.3c-0.8-1.2-1.2-2.7-1.2-4.2c0-4.3,3.5-7.8,7.8-7.8c2.1,0,4.1,0.8,5.5,2.3c1.5,1.5,2.3,3.4,2.3,5.5 C17.9,14.2,14.4,17.7,10.1,17.7 M14.4,11.9c-0.2-0.1-1.4-0.7-1.6-0.8c-0.2-0.1-0.4-0.1-0.5,0.1c-0.2,0.2-0.6,0.8-0.8,0.9 c-0.1,0.2-0.3,0.2-0.5,0.1c-0.2-0.1-1-0.4-1.9-1.2c-0.7-0.6-1.2-1.4-1.3-1.6c-0.1-0.2,0-0.4,0.1-0.5C8,8.8,8.1,8.7,8.2,8.5 c0.1-0.1,0.2-0.2,0.2-0.4c0.1-0.2,0-0.3,0-0.4C8.4,7.6,7.9,6.5,7.7,6C7.5,5.5,7.3,5.6,7.2,5.6c-0.1,0-0.3,0-0.4,0 c-0.2,0-0.4,0.1-0.6,0.3c-0.2,0.2-0.8,0.8-0.8,2c0,1.2,0.8,2.3,1,2.4c0.1,0.2,1.7,2.5,4,3.5c0.6,0.2,1,0.4,1.3,0.5 c0.6,0.2,1.1,0.2,1.5,0.1c0.5-0.1,1.4-0.6,1.6-1.1c0.2-0.5,0.2-1,0.1-1.1C14.8,12.1,14.6,12,14.4,11.9"></path></svg></a>
+        </div>
+        <div class="uk-margin uk-margin-left">
+            <a href="" target="_black" uk-icon="icon: youtube; ratio: 1.5" class="uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="youtube"><path d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z"></path></svg></a>
+        </div>
+    </div>
+    <div class="uk-flex">
+        <a href="#" style="margin:auto;" uk-totop uk-scroll></a>
+    </div>
+            `,
+        element = !!document.querySelector('footer'),
+        el = document.querySelector('footer')
+    if (element) {
+        el.innerHTML = rodape
+    } else {
+        console.log("A tag <footer> nao existe!")
+    }
 }
