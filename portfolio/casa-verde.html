@@ -59,7 +59,7 @@
     <div class="loader">
         <div class="project-loader">
             <div class="bubblingG">
-                <img src="../img/logo no background.png" width="400px" />
+                <img src="../img/logo.png" width="400px" />
                 <p>RELTA</p>
                 <span id="bubblingG_1"></span>
                 <span id="bubblingG_2"></span>
@@ -195,6 +195,66 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="uk-width-1-3@m">
+                                    <div class="uk-card uk-card-default uk-card-body">
+                                        <div class="img-cover"
+                                            style="background-image: url('../img/portfolio/Casa Verde/E.jpeg');">
+                                            <a id="imgE" class="img-click" onclick="revealVideo('img5','port5')"
+                                                onmouseenter="addClass('#imgE', 'mouseEvento')"
+                                                onmouseout="remClass('#imgE', 'mouseEvento')"></a>
+                                            <div id="img5" class="lightbox" onclick="hideVideo('img5','port5')">
+                                                <div class="lightbox-container">
+                                                    <div class="lightbox-content">
+                                                        <a onclick="hideVideo('img5','port5')" class="close"></a>
+                                                        <div class="img-container">
+                                                            <img id="port5" src="../img/portfolio/Casa Verde/E.jpeg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@m">
+                                    <div class="uk-card uk-card-default uk-card-body">
+                                        <div class="img-cover"
+                                            style="background-image: url('../img/portfolio/Casa Verde/F.jpeg');">
+                                            <a id="imgF" class="img-click" onclick="revealVideo('img6','port6')"
+                                                onmouseenter="addClass('#imgF', 'mouseEvento')"
+                                                onmouseout="remClass('#imgF', 'mouseEvento')"></a>
+                                            <div id="img6" class="lightbox" onclick="hideVideo('img6','port6')">
+                                                <div class="lightbox-container">
+                                                    <div class="lightbox-content">
+                                                        <a onclick="hideVideo('img6','port6')" class="close"></a>
+                                                        <div class="img-container">
+                                                            <img id="port6" src="../img/portfolio/Casa Verde/F.jpeg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@m">
+                                    <div class="uk-card uk-card-default uk-card-body">
+                                        <div class="img-cover"
+                                            style="background-image: url('../img/portfolio/Casa Verde/G.jpeg');">
+                                            <a id="imgG" class="img-click" onclick="revealVideo('img7','port7')"
+                                                onmouseenter="addClass('#imgG', 'mouseEvento')"
+                                                onmouseout="remClass('#imgG', 'mouseEvento')"></a>
+                                            <div id="img7" class="lightbox" onclick="hideVideo('img7','port7')">
+                                                <div class="lightbox-container">
+                                                    <div class="lightbox-content">
+                                                        <a onclick="hideVideo('img7','port7')" class="close"></a>
+                                                        <div class="img-container">
+                                                            <img id="port7" src="../img/portfolio/Casa Verde/G.jpeg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
 
                     </div>
@@ -202,13 +262,14 @@
             </div>
             <div id="end"></div>
         <div id="portfolio"></div>
+        <div id="contato"></div>
         <footer></footer>
     </div>
     
     <!-- Load all jsavascrip files -->
     <script type="text/javascript" src="../js/componentes.js"></script>
     <script>
-        window.document.body.onload = menuNavegacao('#menuADM'),rodape(), addPortfolio('#portfolio')
+        window.document.body.onload = menuNavegacao('#menuADM'),rodape(), addPortfolio('#portfolio'), contato()
     </script>
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../css/bootstrap.js"></script>

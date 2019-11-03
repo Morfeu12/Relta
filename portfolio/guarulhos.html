@@ -59,7 +59,7 @@
     <div class="loader">
         <div class="project-loader">
             <div class="bubblingG">
-                <img src="../img/logo no background.png" width="400px" />
+                <img src="../img/logo.png" width="400px" />
                 <p>RELTA</p>
                 <span id="bubblingG_1"></span>
                 <span id="bubblingG_2"></span>
@@ -80,7 +80,8 @@
                     <div class="uk-width-1-4@m">
                         <div id="informativo" class="" uk-sticky="bottom: #end;offset: 60">
                             <div class="uk-text-center uk-padding">
-                                <a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small" href="">Guarulhos</a>
+                                <a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small"
+                                    href="">Guarulhos</a>
                             </div>
                             <div class="uk-padding-small">
                                 <label id="txtlocation"></label><br />
@@ -184,7 +185,8 @@
                                                 <div class="lightbox-content">
                                                     <a onclick="hideVideo('img4','port4')" class="close"></a>
                                                     <div class="img-container">
-                                                        <img id="port4" class="img-containerV" src="../img/portfolio/Guarulhos/D.jpg" />
+                                                        <img id="port4" class="img-containerV"
+                                                            src="../img/portfolio/Guarulhos/D.jpg" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,7 +206,8 @@
                                                 <div class="lightbox-content">
                                                     <a onclick="hideVideo('img5','port5')" class="close"></a>
                                                     <div class="img-container">
-                                                        <img id="port5" class="img-containerV" src="../img/portfolio/Guarulhos/E.jpg" />
+                                                        <img id="port5" class="img-containerV"
+                                                            src="../img/portfolio/Guarulhos/E.jpg" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -244,7 +247,8 @@
                                                 <div class="lightbox-content">
                                                     <a onclick="hideVideo('img7','port7')" class="close"></a>
                                                     <div class="img-container">
-                                                        <img id="port7" class="img-containerV" src="../img/portfolio/Guarulhos/G.jpg" />
+                                                        <img id="port7" class="img-containerV"
+                                                            src="../img/portfolio/Guarulhos/G.jpg" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,39 +257,40 @@
                                 </div>
                             </div>
                             <div class="uk-width-1-3@m">
-                                    <div class="uk-card uk-card-default uk-card-body">
-                                        <div class="img-cover"
-                                            style="background-image: url('../img/portfolio/Guarulhos/H.jpg');">
-                                            <a id="imgH" class="img-click" onclick="revealVideo('img8','port8')"
-                                                onmouseenter="addClass('#imgH', 'mouseEvento')"
-                                                onmouseout="remClass('#imgH', 'mouseEvento')"></a>
-                                            <div id="img8" class="lightbox" onclick="hideVideo('img8','port8')">
-                                                <div class="lightbox-container">
-                                                    <div class="lightbox-content">
-                                                        <a onclick="hideVideo('img8','port8')" class="close"></a>
-                                                        <div class="img-container">
-                                                            <img id="port8" src="../img/portfolio/Guarulhos/H.jpg" />
-                                                        </div>
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    <div class="img-cover"
+                                        style="background-image: url('../img/portfolio/Guarulhos/H.jpg');">
+                                        <a id="imgH" class="img-click" onclick="revealVideo('img8','port8')"
+                                            onmouseenter="addClass('#imgH', 'mouseEvento')"
+                                            onmouseout="remClass('#imgH', 'mouseEvento')"></a>
+                                        <div id="img8" class="lightbox" onclick="hideVideo('img8','port8')">
+                                            <div class="lightbox-container">
+                                                <div class="lightbox-content">
+                                                    <a onclick="hideVideo('img8','port8')" class="close"></a>
+                                                    <div class="img-container">
+                                                        <img id="port8" src="../img/portfolio/Guarulhos/H.jpg" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
             <div id="end"></div>
-    <div id="portfolio"></div>
-        <footer></footer>
+            <div id="contato"></div>
+            <div id="portfolio"></div>
+            <footer></footer>
     </div>
 
     <!-- Load all jsavascrip files -->
     <script type="text/javascript" src="../js/componentes.js"></script>
     <script>
-        window.document.body.onload = menuNavegacao('#menuADM'),rodape(), addPortfolio('#portfolio')
+        window.document.body.onload = menuNavegacao('#menuADM'), rodape(), addPortfolio('#portfolio'), contato()
     </script>
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../css/bootstrap.js"></script>

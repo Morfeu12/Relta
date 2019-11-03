@@ -22,6 +22,14 @@
 		var newclass = document.querySelector(id)
 		newclass.classList.remove(add)
 	}
+	function addAtributo(id,atributo){
+		var newatr = document.querySelector(id);
+		newatr.style = atributo;
+	}
+	function remAtributo(id,atributo){
+		var atr = document.querySelector(id);
+		atr.removeAttribute(atributo); 
+	}
 	function recarregar(url){
 		window.location.href = url
 	}

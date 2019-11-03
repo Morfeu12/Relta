@@ -125,6 +125,16 @@ body {
     background-position: center;
     background-size: 120px;
 }
+.mouseEvento-P{
+    left: 1%!important;
+    top: 1.8%!important;
+    width: 98%!important;
+	background-color: #0009;
+	background-image: url(../img/photo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px;
+}
 #projetos > li{
 	margin-left: .5%;
 	margin-right: .5%;
@@ -167,4 +177,16 @@ body {
 }
 .uk-dropdown-nav>li>a{
 	font-size: 16px;
+}
+.limite-texto {
+	max-width: 30ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.saiba-mais-port {
+	position: absolute;
+    right: 16%;
+    bottom: 21%;
+    font-size: 10pt;
 }

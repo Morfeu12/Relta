@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
- * A Design by GraphBerry
- * Author: GraphBerry
- * Author URL: http://graphberry.com
- * License: http://graphberry.com/pages/license
+ * A Design by OmarCosta
+ * Author: OmarCosta
+ * Author URL: http://omarcosta.site
+ * License: http://omarcosta.site
 -->
 <html lang="pt-BR">
 
@@ -57,7 +57,7 @@
 	<div class="loader">
 		<div class="project-loader">
 			<div class="bubblingG">
-				<img src="img/logo no background.png" width="400px" />
+				<img src="img/logo.png" width="400px" />
 				<p>RELTA</p>
 				<span id="bubblingG_1"></span>
 				<span id="bubblingG_2"></span>
@@ -72,7 +72,7 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
 							class="fa fa-bars"></i></button>
-					<a class="navbar-brand animate" href="#"><img src="img/logo no background.png" alt="logo1"></a>
+					<a class="navbar-brand animate" href="#"><img src="img/logo.png" alt="logo1"></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right animate">
@@ -91,7 +91,7 @@
 							</div>
 						</li>
 						<li><a id="menu-4" onclick="recarregar('#about')"></a></li>
-						<li><a id="menu-5" onclick="recarregar('#contact')"></a></li>
+						<li><a id="menu-5" uk-toggle="target: #modal-close-default"></a></li>
 						<li>
 							<span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
 								<a onclick="lang_EN()">EN</a></span>
@@ -135,23 +135,8 @@
 					uk-slideshow-item="next"></a>
 
 			</div>
-
 			<ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
 		</div>
-		<!--
-			<div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
-			<section id="home" class="home home-fullscreen"> <a href="#services" class="go-to godown">
-				<span>
-					<span class="fa fa-angle-double-down fa-2x"></span>
-					<span class="fa fa-angle-double-down fa-2x"></span>
-					<span class="fa fa-angle-double-down fa-2x"></span>
-					<span class="fa fa-angle-double-down fa-2x"></span>
-					<span class="fa fa-angle-double-down fa-2x"></span>
-				</span>
-			</a>
-		</section>
-	-->
 		<section id="services" class="gray">
 			<div class="container">
 				<div class="heading">
@@ -254,12 +239,7 @@
 									<span id="equipe_p3_cargo" class="title"></span>
 								</a>
 							</li>
-
 						</ul>
-					</div>
-					<div class="row">
-						<div class="col-md-6"></div>
-						<div class="col-md-6"></div>
 					</div>
 				</div>
 			</div>
@@ -273,13 +253,86 @@
 					<div class="divider"><span></span></div>
 					<p id="port_desc"></p>
 				</div>
-
-				<!--Uikit portifolio-->
+				<div class="uk-grid-small uk-text-center" uk-grid>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/casaGP/Capa.jpg');"
+								onmouseenter="remAtributo('#port-1', 'style')">
+								<div id="port-1" style="display:none">
+									<a href="portfolio/casa-gp.html" class="img-click mouseEvento-P"
+										onmouseout="addAtributo('#port-1', 'display:none;')">
+										Casa GP</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/Casa Verde/Capa.JPG');"
+								onmouseenter="remAtributo('#port-2', 'style')">
+								<div id="port-2" style="display:none">
+									<a href="portfolio/casa-verde.html" class="img-click mouseEvento-P"
+										onmouseout="addAtributo('#port-2', 'display:none;')">
+										Casa Verde</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/ccsp/Capa.jpg');"
+								onmouseenter="remAtributo('#port-3', 'style')">
+								<div id="port-3" style="display:none">
+									<a href="portfolio/ccsp.html" class="img-click mouseEvento-P"
+										onmouseout="addAtributo('#port-3', 'display:none;')">
+										CCSP</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/ESV/Capa.png');"
+								onmouseenter="remAtributo('#port-4', 'style')">
+								<div id="port-4" style="display:none">
+									<a href="portfolio/esv.html" class="img-click mouseEvento-P"
+										onmouseout="addAtributo('#port-4', 'display:none;')">
+										ESV BR</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/Guarulhos/Capa.jpg');"
+								onmouseenter="remAtributo('#port-5', 'style')">
+								<div id="port-5" style="display:none">
+									<a href="portfolio/guarulhos.html" class="img-click mouseEvento-P"
+										onmouseout="addAtributo('#port-5', 'display:none;')">
+										Guarulhos</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/vl madalena/Capa.jpg');"
+								onmouseenter="remAtributo('#port-6', 'style')">
+								<div id="port-6" style="display:none">
+									<a href="portfolio/vila-madalena.html" class="img-click mouseEvento-P"
+										onmouseout="addAtributo('#port-6', 'display:none;')">
+										Vila Madalena</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Uikit portifolio
 				<div uk-slider>
 					<div class="uk-position-relative">
-						<!-- lista Clientes -->
+						
 						<div class="uk-slider-container">
-							<!-- uk-child-width-1-2@s ajuste resolucao maior que 640x; uk-child-width-1-6@l ajuste resolucao maior que 1200 -->
+							
 							<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-1@s uk-child-width-1-4@l">
 								<li class="uk-transition-toggle" tabindex="0">
 									<div class="uk-card uk-card-default">
@@ -413,8 +466,7 @@
 										</div>
 									</div>
 								</li>
-
-								<!-- fim Portifolio -->
+							</ul>
 						</div>
 						<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 						<div class="uk-hidden@s uk-light">
@@ -430,10 +482,11 @@
 							<a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
 								uk-slider-item="next"></a>
 						</div>
-					</div>
-				</div>
+					</div>-->
+			</div>
 		</section>
-		<!-- FIM Portifolio-->
+
+
 		<section id="parceiros">
 			<div class="container">
 				<div class="heading">
@@ -468,7 +521,8 @@
 									src="img/parceiros/suite-planejados.jpg" />
 							</a>
 							<a class="uk-link-heading uk-button-text oc-heading-small"
-								href="https://www.instagram.com/suiteplanejados/" target="_blanck">Suite Planejados</a>
+								href="https://www.instagram.com/suiteplanejados/" target="_blanck">Suite
+								Planejados</a>
 						</div>
 					</div>
 					<div>
@@ -481,169 +535,50 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
-		<div class="mask"></div>
-		</a>
-	</div>
-	<!--<div class="container">
-		<div class="heading">
-			<h1 id="port_pergunta"></h1>
-			<p id="port_resposta"></p>
-		</div>
-		<div style="text-align:center; margin-bottom: 50px">
-			<a id="btn_contato" href="#contact" class="btn btn-primary"></a>
-		</div>
-	</div>
-	<div class="branded-section numbers"> </div>-->
-	</section>
+		<section id="contacto">
+			<a class="uk-button uk-button-default uk-margin-small-right" type="button"
+				uk-toggle="target: #modal-close-default"><img class="pulse" src="img/contato.png" /></a>
 
-	<section id="contact" class="gray">
-		<div class="container">
-			<div class="heading">
-				<div id="contato_titulo"></div>
-				<h1 id="contato_subtitulo"></h1>
-				<div class="divider">
-					<span></span>
-				</div>
-			</div>
-			<div class="row">
-
-				<div id="contato-email" class="col-md-6 adress-element delay2">
-					<i class="fa fa-comment fa-2x"></i>
-					<h3 id="contato_email_titulo"></h3>
-					<span id="contato_email" class="font-l"></span>
-				</div>
-				<div id="contato-tel" class="col-md-6 adress-element delay4">
-					<i class="fa fa-phone fa-2x"></i>
-					<h3 id="contato_tel_titulo"></h3>
-					<span id="contato_tel" class="font-l"></span>
-				</div>
-			</div>
-		</div>
-		<div class="branded-section contact-form">
-			<div class="masked">
-				<div class="container">
-					<div class="heading">
-						<h1 id="form_titulo" class="light-font"></h1>
-						<p id="form_desc" class="light-font"></p>
+			<!-- This is the modal with the default close button -->
+			<div id="modal-close-default" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body" style="width: 80%; height: 100%;padding:0px;">
+					<button class="uk-modal-close-default" type="button" uk-close></button>
+					<div id="obj-contato" style="width: 100%;height:100%;">
+						<iframe id="contato-iframe" src="ContactFrom_v17/index.html" scrolling="yes"
+							style="width: 100%; height: 100%;"></iframe>
 					</div>
-					<form class="form-horizontal">
-						<div class="form-group">
-
-							<div class="colw_6 paddbott100 spec-r-cont">
-								<h3 id="form_subtitulo"></h3>
-
-
-
-
-								<form action="http://www.relta.com.br/cgi-sys/formmail.pl" method="post"
-									name="hgmailer">
-									<input type="hidden" name="recipient" value="reltahomolog@gmail.com">
-									<!--contato@relta.com.br-->
-									<input type="hidden" name="subject" value="Contato via Site">
-									<label id="form_nome"></label><br>
-									<input type="text" name="nome" size="40" value=""><br><br>
-									<label id="form_email"></label><br>
-									<input type="text" name="email" size="40" value=""><br><br>
-									<label id="form_tel"></label><br>
-									<input type="tel" name="telefone" size="40" value=""><br><br>
-									<label id="form_msg"></label><br>
-									<textarea name="mensagem" cols="52" rows="5"></textarea><br>
-									<br>
-									<input id="form_btn" type="button" value="Enviar" onclick="hgsubmit();">
-									<input type="hidden" name="redirect" value="http://www.relta.com.br/">
-								</form>
-
-
-
-
-							</div>
-							<!-- END col_6 -->
-					</form>
 				</div>
 			</div>
-		</div>
-	</section>
-	<a class="uk-button uk-button-default uk-margin-small-right" type="button"
-	uk-toggle="target: #modal-close-default"><img class="pulse" src="img/contato.png" /></a>
-	<!-- This is a button toggling the modal with the default close button -->
-	<button >Default</button>
+		</section>
+		<footer></footer>
 
-	<!-- This is the modal with the default close button -->
-	<div id="modal-close-default" uk-modal>
-		<div class="uk-modal-dialog uk-modal-body" style="width: 80%; height: 100%;padding:0px;">
-			<button class="uk-modal-close-default" type="button" uk-close></button>
-			<div id="obj-contato" style="width: 100%;height:100%;">
-					<iframe src="ContactFrom_v17/index.html" scrolling="yes" style="width: 100%; height: 100%;" ></iframe>	
-			</div>
-		</div>
-	</div>
-	<footer>
-		<!--<div class="container">
-			<p id="copyright"></p>
-			<ul class="social-list">
-				<li class="facebook">
-					<a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook"></i></a>
-				</li>
-				<li class="twitter">
-					<a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter"></i></a>
-				</li>
-				<li class="dribbble">
-					<a href="http://goo.gl/k9zAy5"> <i class="fa fa-dribbble"></i></a>
-				</li>
-				<li class="youtube">
-					<a href="#"><i class="fa fa-youtube"></i></a>
-				</li>
-			</ul>
-			<a href="" class="square-l goup" style="position: relative">
-				<span>
-					<span class="fa fa-angle-double-up fa-2x"></span>
-					<span class="fa fa-angle-double-up fa-2x"></span>
-					<span class="fa fa-angle-double-up fa-2x"></span>
-					<span class="fa fa-angle-double-up fa-2x"></span>
-					<span class="fa fa-angle-double-up fa-2x"></span>
-				</span>
-			</a>
-		</div>-->
-	</footer>
-	</div>
-	<!-- Load all jsavascrip files -->
-	<script type="text/javascript" src="js/componentes.js"></script>
-	<script>
-		window.document.body.onload = rodape();
-	</script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/jquery.label_better.js"></script>
-	<script type="text/javascript" src="js/jquery.mixitup.js"></script>
-	<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
-	<script type="text/javascript" src="js/jquery.inview.js"></script>
-	<script type="text/javascript" src="js/countUp.js"></script>
-	<script type="text/javascript" src="js/uikit.min.js"></script>
-	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script src="js/grid.js"></script>
-	<script type="text/javascript" src="js/port.js"></script>
-	<script>
-		$(function () {
-			Grid.init();
-		});
-
-		function hgsubmit() {
-			if (/\S+/.test(document.hgmailer.nome.value) == false) alert("Por favor, digite um nome.");
-			else if (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false) alert("Um endereço de e-mail válido é requerido.");
-			else if (/\S+/.test(document.hgmailer.mensagem.value) == false) alert("É necessário um conteúdo para mensagem.");
-			else {
-				document.hgmailer.submit();
-				alert('Obrigado!\nSeu e-mail foi enviado com sucesso.');
-			}
-		}
-
-	</script>
+		<!-- Load all jsavascrip files -->
+		<script type="text/javascript" src="js/componentes.js"></script>
+		<script>
+			window.document.body.onload = rodape();
+		</script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="js/jquery.label_better.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+		<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+		<script type="text/javascript" src="js/jquery.inview.js"></script>
+		<script type="text/javascript" src="js/countUp.js"></script>
+		<script type="text/javascript" src="js/uikit.min.js"></script>
+		<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="js/grid.js"></script>
+		<script type="text/javascript" src="js/port.js"></script>
+		<script>
+			//Funcao chama informacao do profissional
+			$(function () {
+				Grid.init();
+			});
+		</script>
 </body>
 
 </html>
