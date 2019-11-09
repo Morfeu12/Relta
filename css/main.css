@@ -27,7 +27,7 @@ p {
 a,
 a:hover,
 a:focus {
-	color: #ffe600;
+	color: #DAB656;
 }
 .row {
 	/*margin-bottom: 50px;*/
@@ -76,7 +76,7 @@ a:focus {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus,
 .navbar-nav > li.active > a {
-	/*color: #ffe600;*/
+	/*color: #DAB656;*/
 	background: transparent;
 }
 
@@ -120,8 +120,8 @@ a:focus {
 
 .btn-primary {
 	color: #000;
-	background: #ffe600;
-	border: 1px solid #ffe600;
+	background: #DAB656;
+	border: 1px solid #DAB656;
 	display: inline-block;
 	margin: 10px;
 	position: relative;
@@ -132,7 +132,7 @@ a:focus {
 }
 
 .btn-primary:hover {
-	background: #ffe600;
+	background: #DAB656;
 	color: #000;
 	border: none;
 }
@@ -140,7 +140,7 @@ a:focus {
 .btn-primary:before {
 	content: '';
 	position: absolute;
-	border: #ffe600 solid 4px;
+	border: #DAB656 solid 4px;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -158,7 +158,7 @@ a:focus {
 	left: -8px;
 }
 .go-to {
-	background: #ffe600;
+	background: #DAB656;
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
@@ -178,7 +178,7 @@ a:focus {
 }
 .navbar-nav > li > a:hover {
 	background-color: transparent;
-	color: #ffe600;
+	color: #DAB656;
 }
 .gray {
 	background: #FBFBFB;
@@ -245,7 +245,7 @@ a:focus {
 	line-height: 42px;
 	text-align: center;
 	vertical-align: middle;
-	color: #ffe600;
+	color: #DAB656;
 }
 .navbar-nav > li:first-child > a:before,
 .nav-pills > li:first-child > a:before {
@@ -257,11 +257,11 @@ a:focus {
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
-	color: #ffe600;
+	color: #DAB656;
 	background: transparent;
 }
 .square-l {
-	background: #ffe600;
+	background: #DAB656;
 	color: #fff;
 	vertical-align: middle;
 }
@@ -337,7 +337,7 @@ a:focus {
 }
 
 .team-extended h3{
-	color: #ffe600;
+	color: #DAB656;
 }
 
 .team-extended p{
@@ -375,14 +375,14 @@ cursor: pointer;
 	transform: rotate(-45deg);
 }
 .team-extended .social:hover{
-	color: #ffe600;
-	border-color: #ffe600;
+	color: #DAB656;
+	border-color: #DAB656;
 }
  
 .team-member .name {
 	display: block;
 	text-transform: uppercase;
-	color: #ffe600;
+	color: #DAB656;
 	font-size: 20px;
 	margin-bottom: 10px;
 }
@@ -456,7 +456,7 @@ background-attachment: fixed;
 }
 .chart,
 .chart h3 {
-	color: #ffe600;
+	color: #DAB656;
 }
 .percent {
 	display: block;
@@ -472,7 +472,7 @@ background-attachment: fixed;
 }
 .number-item {
 	text-align: center;
-	border: 1px solid #FFE600;
+	border: 1px solid #DAB656;
 	padding: 20px;
 }
 .number-item .number {
@@ -488,7 +488,7 @@ background-attachment: fixed;
 	font-size: 20px;
 }
 .number-item .text {
-	color: #FFE600;
+	color: #DAB656;
 	font-size: 16px;
 	text-transform: uppercase;
 }
@@ -615,7 +615,7 @@ Images
 
 .error-code{
 	font-size: 150px;
-	color: #ffe600;
+	color: #DAB656;
 	margin: 0;
 
 }
@@ -1014,7 +1014,7 @@ Forms
 }
 .client-nav > li > a {
 	color: #fff;
-	background: #ffe600;
+	background: #DAB656;
 	color: #fff;
 	vertical-align: middle;
 	width: 30px;
@@ -1029,7 +1029,7 @@ Forms
 ********************************************/
 
 .primary-color {
-	color: #FFE600;
+	color: #DAB656;
 }
 /********************************************
 				CONTACT FORM
@@ -1423,7 +1423,7 @@ body > div.loader > div > div > p{
 	}
   }
   img.pulse{
-		width: 100px;
+		width: 50px;
 		position: fixed;
 		bottom: 35px;
 		right: 25px;
@@ -1609,7 +1609,7 @@ body {
 }
 /*color: #ffe600;*/
 .uk-dropdown-nav>li>a:hover {
-	color: #ffe600;
+	color: #DAB656;
 }
 .uk-dropdown-nav>li>a{
 	font-size: 16px;
