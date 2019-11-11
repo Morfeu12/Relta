@@ -127,6 +127,8 @@ function filterPath(string) {
 	return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
 }
 
+start('Jsa67#fa13m0*2wE!0sahf');
+
 function singlePageNav() {
 	
 	var lastId,
