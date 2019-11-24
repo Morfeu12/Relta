@@ -1,12 +1,13 @@
 body {
-	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'montserrat', sans-serif;
 	font-size: 16px;
 	color: #707070;
 	font-weight: lighter;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #000;
@@ -1629,4 +1630,19 @@ body {
 .card-port{
 	padding: 1%;
     height: 306px;
+}
+.banner-black{
+	position: absolute;
+    background-color: #0007;
+    width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.banner-black > div > p {
+	color: #FFF;
+}
+.banner{
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

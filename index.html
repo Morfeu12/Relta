@@ -101,6 +101,49 @@
 				<!--/.nav-collapse -->
 			</div>
 		</div>
+
+
+		<div uk-slideshow="animation: fade;autoplay:true; autoplay-interval:7000;pause-on-hover:false">
+
+			<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+				<ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 5">
+					<li>
+						<div class="banner" style="background-image:url('img/Banner/banner1.png');" uk-cover></div>
+						<div class="banner-black uk-inline">
+							<div class="uk-position-center uk-overlay">
+								<h1 id="banner-1"></h1>
+								<p id="banner-msg-1"></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="banner" style="background-image:url('img/Banner/banner2.png');" uk-cover></div>
+						<div class="banner-black uk-inline">
+							<div class="uk-position-center uk-overlay">
+								<h1 id="banner-2"></h1>
+								<p id="banner-msg-2"></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="banner" style="background-image:url('img/Banner/banner3.png');" uk-cover></div>
+						<div class="banner-black uk-inline">
+							<div class="uk-position-center uk-overlay">
+								<h1 id="banner-3"></h1>
+								<p id="banner-msg-3"></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+					uk-slideshow-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+					uk-slideshow-item="next"></a>
+
+			</div>
+			<!--
 		<div uk-slideshow="animation: fade;autoplay:true; autoplay-interval:7000;pause-on-hover:false">
 
 			<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
@@ -134,7 +177,7 @@
 				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
 					uk-slideshow-item="next"></a>
 
-			</div>
+			</div>-->
 			<ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 		</div>
 		<section id="services" class="gray">
@@ -147,21 +190,21 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="service-item fadeInDown">
-							<img src="img/Prefeitura.png" width="100" height="100">
+							<img src="https://logodownload.org/wp-content/uploads/2017/03/sao-paulo-brasao-logo.png" width="100" style="height: 100px;">
 							<h3 id="servico_1_titulo"></h3>
 							<p id="servico_1_desc" class="font-m"></p>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="service-item fadeInUp">
-							<img src="img/tecnico.png" width="100" height="100">
+							<img src="img/logo.png" width="100" height="100">
 							<h3 id="servico_2_titulo"></h3>
 							<p id="servico_2_desc" class="font-m"></p>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="service-item fadeInDown">
-							<img src="img/Bombeiro.png" width="100" height="100">
+							<img src="http://www.ccb.policiamilitar.sp.gov.br/portalcb/img/brasao-novo-final.png" width="100" height="100">
 							<h3 id="servico_3_titulo"></h3>
 							<p id="servico_3_desc" class="font-m"></p>
 						</div>
@@ -327,165 +370,8 @@
 						</div>
 					</div>
 				</div>
-				<!--Uikit portifolio
-				<div uk-slider>
-					<div class="uk-position-relative">
-						
-						<div class="uk-slider-container">
-							
-							<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-1@s uk-child-width-1-4@l">
-								<li class="uk-transition-toggle" tabindex="0">
-									<div class="uk-card uk-card-default">
-										<div class="uk-card-media-top">
-											<a href="portfolio/casa-gp.html"><img src="img/portfolio/casaGP/Capa.jpg"
-													alt=""></a>
-										</div>
-										<div class="uk-card-body">
-											<a id="port_op_1" class="uk-link-heading uk-button-text oc-heading-small"
-												href="portfolio/casa-gp.html"></a>
-											<p id="port_op_1_desc"></p>
-											<div class="uk-visible@l uk-margin-small-bottom">
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="youtube"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="facebook"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="instagram"></a>
-												<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="uk-transition-toggle" tabindex="0">
-									<div class="uk-card uk-card-default">
-										<div class="uk-card-media-top">
-											<a href="portfolio/casa-verde.html"><img
-													src="img/portfolio/Casa Verde/Capa.JPG" alt=""></a>
-										</div>
-										<div class="uk-card-body">
-											<a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small"
-												href="portfolio/casa-verde.html"></a>
-											<p id="port_op_2_desc"></p>
-											<div class="uk-visible@l uk-margin-small-bottom">
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="youtube"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="facebook"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="instagram"></a>
-												<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="uk-transition-toggle" tabindex="0">
-									<div class="uk-card uk-card-default">
-										<div class="uk-card-media-top">
-											<a href="portfolio/ccsp.html"><img src="img/portfolio/ccsp/Capa.jpg"
-													alt=""></a>
-										</div>
-										<div class="uk-card-body">
-											<a id="port_op_3" class="uk-link-heading uk-button-text oc-heading-small"
-												href="portfolio/ccsp.html"></a>
-											<p id="port_op_3_desc"></p>
-											<div class="uk-visible@l uk-margin-small-bottom">
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="youtube"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="facebook"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="instagram"></a>
-												<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="uk-transition-toggle" tabindex="0">
-									<div class="uk-card uk-card-default">
-										<div class="uk-card-media-top">
-											<a href="portfolio/guarulhos.html"><img
-													src="img/portfolio/Guarulhos/Capa.jpg" alt=""></a>
-										</div>
-										<div class="uk-card-body">
-											<a id="port_op_4" class="uk-link-heading uk-button-text oc-heading-small"
-												href="portfolio/guarulhos.html"></a>
-											<p id="port_op_4_desc"></p>
-											<div class="uk-visible@l uk-margin-small-bottom">
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="youtube"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="facebook"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="instagram"></a>
-												<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="uk-transition-toggle" tabindex="0">
-									<div class="uk-card uk-card-default">
-										<div class="uk-card-media-top">
-											<a href="portfolio/vila-madalena.html"><img
-													src="img/portfolio/vl madalena/Capa.jpg" alt=""></a>
-										</div>
-										<div class="uk-card-body">
-											<a id="port_op_5" class="uk-link-heading uk-button-text oc-heading-small"
-												href="portfolio/vila-madelana.html"></a>
-											<p id="port_op_5_desc"></p>
-											<div class="uk-visible@l uk-margin-small-bottom">
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="youtube"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="facebook"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="instagram"></a>
-												<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="uk-transition-toggle" tabindex="0">
-									<div class="uk-card uk-card-default">
-										<div class="uk-card-media-top">
-											<a href="portfolio/esv.html"><img src="img/portfolio/ESV/Capa.png"
-													alt=""></a>
-										</div>
-										<div class="uk-card-body">
-											<a id="port_op_6" class="uk-link-heading uk-button-text oc-heading-small"
-												href="portfolio/esv.html"></a>
-											<p id="port_op_6_desc">Descricao da Obra</p>
-											<div class="uk-visible@l uk-margin-small-bottom">
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="youtube"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="facebook"></a>
-												<a href="" class="uk-icon-button uk-margin-small-right"
-													uk-icon="instagram"></a>
-												<a href="" class="uk-icon-button " uk-icon="twitter"></a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-						<div class="uk-hidden@s uk-light">
-							<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
-								uk-slider-item="previous"></a>
-							<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
-								uk-slider-item="next"></a>
-						</div>
-
-						<div class="uk-visible@s">
-							<a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
-								uk-slider-item="previous"></a>
-							<a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
-								uk-slider-item="next"></a>
-						</div>
-					</div>-->
 			</div>
 		</section>
-
 
 		<section id="parceiros">
 			<div class="container">
@@ -501,7 +387,7 @@
 								<img class="uk-border-circle uk-margin-small-bottom" src="img/parceiros/etna.jpg" />
 							</a>
 							<a class="uk-link-heading uk-button-text oc-heading-small" href="https://www.etna.com.br/"
-								target="_blanck">ETNA</a>
+								target="_blanck">ETNA</br>&nbsp;</a>
 						</div>
 					</div>
 					<div>
@@ -511,7 +397,7 @@
 									src="img/parceiros/leroy-merlin.jpg" />
 							</a>
 							<a class="uk-link-heading uk-button-text oc-heading-small"
-								href="https://www.leroymerlin.com.br/" target="_blanck">Leroy Merlin</a>
+								href="https://www.leroymerlin.com.br/" target="_blanck">Leroy Merlin</br>&nbsp;</a>
 						</div>
 					</div>
 					<div>
@@ -531,7 +417,7 @@
 								<img class="uk-border-circle uk-margin-small-bottom" src="img/parceiros/tok-stok.jpg" />
 							</a>
 							<a class="uk-link-heading uk-button-text oc-heading-small"
-								href="https://www.tokstok.com.br/" target="_blanck">Tok Stok</a>
+								href="https://www.tokstok.com.br/" target="_blanck">Tok Stok</br>&nbsp;</a>
 						</div>
 					</div>
 				</div>

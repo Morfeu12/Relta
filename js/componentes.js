@@ -236,6 +236,17 @@ function addPortfolio(id) {
                                     </div>
                                 </div>
                             </li>
+                            <li class="uk-transition-toggle" tabindex="0">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <a onclick="recarregar('../index.html')"><img src="../img/logo.png" alt="Relta"></a>
+                                    </div>
+                                    <div class="uk-card-body" style="text-align:center;">
+                                        <a class="uk-link-heading uk-button-text oc-heading-small" onclick="recarregar('../index.html')">Relta</a>
+                                        <p>Relta.com.br</p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>

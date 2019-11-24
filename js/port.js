@@ -18,9 +18,9 @@
 		newclass.classList.add(add)	
 	}
 
-	function remClass(id,add){
+	function remClass(id,atr){
 		var newclass = document.querySelector(id)
-		newclass.classList.remove(add)
+		newclass.classList.remove(atr)
 	}
 	function addAtributo(id,atributo){
 		var newatr = document.querySelector(id);
