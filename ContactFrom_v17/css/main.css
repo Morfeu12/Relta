@@ -521,9 +521,8 @@ textarea.input100 {
   }
 }
 .eng-text-form{
-  margin-left: 12px;
-  font-style: italic;
-  color: #888;
+  margin-left: 10px;
+  color: #aaa;
   font-size: 10px;
 }
 b {
@@ -533,8 +532,7 @@ b {
 }
 .eng-text{
   margin-top: 5px;
-  font-style: italic;
-  color: #888;
+  color: #bbb;
   font-size: 20px;
 }
 .display-btn-initial{
@@ -550,11 +548,8 @@ b {
   bottom: 0;
 }
 .whats{
-  background-color: #00832e;
-  position: absolute;
-  left: -40%;
-  bottom: 0;
-  width: 200%;
-  height: 74px;
-  z-index: 0;
+  color: #FFF;
+}
+.whats:hover{
+  color: #00832e;
 }

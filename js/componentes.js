@@ -9,10 +9,10 @@ function menuNavegacao(id) {
                 <a class="navbar-brand animate" onclick="recarregar('../index.html')"><img src="../img/logo.png" alt="logo1"></a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right animate">
-                    <li><a id="menu-1" onclick="recarregar('../index.html')"></a></li>
-                    <li><a id="menu-2" onclick="recarregar('../index.html#services')"></a></li>
-                    <li><a id="menu-3" href="#"></a><div uk-dropdown="offset: 0">
+                <ul class="nav navbar-nav navbar-center animate">
+                    <li class="nav-li"><a id="menu-1" onclick="recarregar('../index.html')"></a></li>
+                    <li class="nav-li"><a id="menu-2" onclick="recarregar('../index.html#services')"></a></li>
+                    <li class="nav-li"><a id="menu-3" href="#"></a><div uk-dropdown="offset: 0">
                             <ul class="uk-nav uk-dropdown-nav">
                                 <li><a href="casa-gp.html">Casa GP</a></li>
                                 <li><a href="casa-verde.html">Casa Verde</a></li>
@@ -22,9 +22,9 @@ function menuNavegacao(id) {
                                 <li><a href="vila-madalena.html">Vila Madalena</a></li>
                             </ul>
                         </div></li>
-                    <li><a id="menu-4" onclick="recarregar('../index.html#about')"></a></li>
-                    <li><a id="menu-5" uk-toggle="target: #modal-close-default"></a></li>
-                    <li>
+                    <li class="nav-li"><a id="menu-4" onclick="recarregar('../index.html#about')"></a></li>
+                    <li class="nav-li"><a id="menu-5" uk-toggle="target: #modal-close-default"></a></li>
+                    <li class="nav-li">
                         <span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
                             <a onclick="lang_EN()">EN</a></span>
                     </li>
@@ -38,7 +38,7 @@ function menuNavegacao(id) {
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-            <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 25">
+            <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 32.2">
                 <li>
                     <img src="../img/Banner/banner1.png" alt="" uk-cover>
                     <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
@@ -108,8 +108,7 @@ function addPortfolio(id) {
                                     <div class="uk-card-body">
                                         <a id="port_op_1" class="uk-link-heading uk-button-text oc-heading-small"
                                             href="casa-gp.html">Casa GP</a>
-                                        <p id="port_op_1_desc"></p>
-                                        <a href="casa-gp.html" class="saiba-mais-port">Saiba mais</a>
+                                        <p id="port_op_1_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>
@@ -131,8 +130,7 @@ function addPortfolio(id) {
                                     <div class="uk-card-body">
                                         <a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small"
                                             href="casa-verde.html">Casa Verde</a>
-                                        <p id="port_op_2_desc"></p>
-                                        <a href="casa-verde.html" class="saiba-mais-port">Saiba mais</a>
+                                        <p id="port_op_2_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>
@@ -153,8 +151,7 @@ function addPortfolio(id) {
                                     <div class="uk-card-body">
                                         <a id="port_op_3" class="uk-link-heading uk-button-text oc-heading-small"
                                             href="ccsp.html">CCSP</a>
-                                        <p id="port_op_3_desc"></p>
-                                        <a href="ccsp.html" class="saiba-mais-port">Saiba mais</a>
+                                        <p id="port_op_3_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>
@@ -176,8 +173,7 @@ function addPortfolio(id) {
                                     <div class="uk-card-body">
                                         <a id="port_op_4" class="uk-link-heading uk-button-text oc-heading-small"
                                             href="guarulhos.html">Guarulhos</a>
-                                        <p id="port_op_4_desc"></p>
-                                        <a href="guarulhos.html" class="saiba-mais-port">Saiba mais</a>
+                                        <p id="port_op_4_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>
@@ -199,8 +195,7 @@ function addPortfolio(id) {
                                     <div class="uk-card-body">
                                         <a id="port_op_5" class="uk-link-heading uk-button-text oc-heading-small"
                                             href="vila-madalena.html">Vila Madalena</a>
-                                        <p id="port_op_5_desc"></p>
-                                        <a href="vila-madalena.html" class="saiba-mais-port">Saiba mais</a>
+                                        <p id="port_op_5_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>
@@ -222,8 +217,7 @@ function addPortfolio(id) {
                                     <div class="uk-card-body">
                                         <a id="port_op_6" class="uk-link-heading uk-button-text oc-heading-small"
                                             href="esv.html">ESV</a>
-                                        <p id="port_op_6_desc"></p>
-                                        <a href="esv.html" class="saiba-mais-port">Saiba mais</a>
+                                        <p id="port_op_6_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>

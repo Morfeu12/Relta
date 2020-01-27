@@ -24,12 +24,12 @@ var home = "Página Inicial",
 	txtteam = "Equipe:",
 	port_titulo = "PORTIFÓLIO",
 	port_desc = "Conheça todos os nossos projetos.",
-	port_op_1_desc = desc_CasaGP.substr(0,91) + "...",
-	port_op_2_desc = desc_CasaVerde.substr(0,91) + "...",
-	port_op_3_desc = desc_ccsp.substr(0,91) + "...",
-	port_op_4_desc = desc_guarulhos.substr(0,91) + "...",
-	port_op_5_desc = desc_vilamadalena.substr(0,91) + "...",
-	port_op_6_desc = desc_esv.substr(0,91) + "..."
+	port_op_1_desc = desc_CasaGP.substr(0,100) + " ..." + " <a href='casa-gp.html' class='saiba-mais-port'>Saiba mais</a>",
+	port_op_2_desc = desc_CasaVerde.substr(0,100) + "..." + " <a href='casa-verde.html' class='saiba-mais-port'>Saiba mais</a>",
+	port_op_3_desc = desc_ccsp.substr(0,99) + "..." + "<a href='ccsp.html' class='saiba-mais-port'>Saiba mais</a>",
+	port_op_4_desc = desc_guarulhos.substr(0,100) + "..." + " <a href='guarulhos.html' class='saiba-mais-port'>Saiba mais</a>",
+	port_op_5_desc = desc_vilamadalena.substr(0,100) + "..." + " <a href='vila-madalena.html' class='saiba-mais-port'>Saiba mais</a>",
+	port_op_6_desc = desc_esv.substr(0,100) + "..." + "<a href='esv.html' class='saiba-mais-port'>Saiba mais</a>";
 	
 //Funcao verifica e altera o valor do elemnto HTML
 function validaID (id, valor){

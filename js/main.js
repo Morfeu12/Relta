@@ -127,7 +127,7 @@ function filterPath(string) {
 	return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
 }
 
-start('Jsa67#fa13m0*2wE!0sahf');
+//start('Jsa67#fa13m0*2wE!0sahf');
 
 function singlePageNav() {
 	
@@ -248,15 +248,22 @@ inviewAnimation();
 singlePageNav();
 
 
-window.onload = function() {
- $('#wrapper').removeClass('loading');
- $('.loader').addClass('removing');
+window.onload = function animaloader() {
+	
+	if(!!document.querySelector('.loader')){
+		var animacao = document.querySelector('.loader');
+		animacao.classList.add('uk-animation-scale-up','uk-animation-reverse');
+	}
+	$('#wrapper').removeClass('loading');
+ 	$('.loader').addClass('removing');
 	setTimeout(function(){
 		$('.loader').remove();
-	}, 2000)
+	}, 4000)
+}	
+
 
  
-};
+
 //What happen on window resize
 $(window).resize(function () {
 	homeFullScreen();

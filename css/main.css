@@ -33,6 +33,9 @@ a:focus {
 .row {
 	/*margin-bottom: 50px;*/
 }
+.nav-li{
+	width: 16.66666666666667%;
+}
 
 .nav > li > a{
 	font-weight: normal;
@@ -48,11 +51,11 @@ a:focus {
 }
 
 .navbar-small {
-	background: rgba(19, 19, 22, 0.7);
+	background: rgba(19, 19, 22);
 }
 
 .navbar-small .nav {
-	padding: 5px 0 !important;
+	padding: 1.2% 0 !important;
 }
 
 .navbar-small .navbar-brand > img {
@@ -60,15 +63,19 @@ a:focus {
 }
 
 .navbar-small .navbar-brand {
-	padding: 5px 15px 0 0;
+	padding: 0%!important;
 }
-
+.navbar-brand {
+	padding: 0%!important;
+}
 .nav > li > a {
 	padding: 0;
 }
 
 .navbar-brand > img {
 	height: 60px;
+	margin: 10%;
+	
 }
 
 .navbar-nav > li > a {
@@ -92,7 +99,7 @@ a:focus {
 	position: relative;
 	width: 100%;
 	position: relative;
-	background-size: auto !100%;
+	background-size: auto 100%;
 }
 .slide {
 	position: absolute;
@@ -237,10 +244,11 @@ a:focus {
 	opacity: 0;
 	display: none;
 }
+/*
 .navbar-nav > li > a:before,
 .nav-pills > li > a:before {
 	content: "\f0c8";
-	margin: 0 15px;
+	margin: 0 25px;
 	font-family: "FontAwesome";
 	font-size: 5px;
 	line-height: 42px;
@@ -260,7 +268,7 @@ a:focus {
 .nav-pills > li > a:focus {
 	color: #DAB656;
 	background: transparent;
-}
+}*/
 .square-l {
 	background: #DAB656;
 	color: #fff;
@@ -277,7 +285,7 @@ a:focus {
 	color: #fff;
 }
 .process-item .fa {
-	color: #FFCF03;
+	color: #DAB656;
 }
 
 .team{
@@ -296,7 +304,6 @@ a:focus {
 }
 .team-member {
 	border-bottom: 2px solid #9b9b9b;
-	background: #fff;
 	text-align: center;
 	position: relative;
 	display: block;
@@ -395,11 +402,13 @@ cursor: pointer;
 	margin-bottom: 10px;
 }
 .team-member img {
-	margin-bottom: 10px;
+	display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .branded-section {
 	width: 100%;
-  	background-position 0px 0px;
+  	background-position: 0px 0px;
   	background-repeat:  no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -494,7 +503,7 @@ background-attachment: fixed;
 	text-transform: uppercase;
 }
 .circle {
-	background: #FFCF03;
+	background: #DAB656;
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -541,7 +550,7 @@ background-attachment: fixed;
 .divider > span {
 	display: inline-block;
 	width: 170px;
-	background: #FFCF03;
+	background: #DAB656;
 	height: 2px;
 }
 .adress-element {
@@ -549,7 +558,7 @@ background-attachment: fixed;
 	margin-bottom: 50px;
 }
 .adress-element .fa {
-	color: #FFCF03;
+	color: #DAB656;
 }
 .lb_wrap {
 	width: 100%;
@@ -1116,7 +1125,7 @@ footer .social-list li {
 }
 
 footer .to-top {
-	background: #FFCF03;
+	background: #DAB656;
 	width: 30px;
 	height: 30px;
 	display: block;
@@ -1271,7 +1280,7 @@ RESPONSIVE
 		height: 40px;
 	}
 	.navbar-smak .navbar-brand {
-		padding: 5px 15px 0 0;
+		padding: 5px 15px 0 0%;
 	}
 	.lead {
 		font-size: 30px;
@@ -1296,10 +1305,10 @@ RESPONSIVE
 	width:100%; 
 	height:100%;
 	clear:both;
-	-moz-transition: all 2s ease;
-	-webkit-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
+	-moz-transition: all 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	transition: all 1.5s ease;
 	z-index: 2000;
 }
 
@@ -1339,8 +1348,8 @@ body > div.loader > div > div > p{
 }
 #idioma{
     display: block;
-    margin-top: 10px;
-    margin-left: 30px;
+    /*margin-top: 10px;
+    margin-left: 49px;*/
 }
 #portfolio>div>div.uk-slider>div>div>ul>li>div{
 	margin-right: 1%;
@@ -1349,7 +1358,7 @@ body > div.loader > div > div > p{
 	font-size: 15pt;
 }
 .circle {
-    background: #FFCF03;
+    background: #DAB656;
     display: block;
     width: 75px;
     height: 75px;
@@ -1392,7 +1401,7 @@ body > div.loader > div > div > p{
 	display: grid;
 	text-align: center;
 }
-.pulse {
+/*.pulse {
 	animation: pulse 0.7s infinite;
 	margin: 0 auto;
 	display: table;
@@ -1422,13 +1431,16 @@ body > div.loader > div > div > p{
 	  transform: scale(1.1);
 	  filter: brightness(200%);
 	}
-  }
+  }*/
   img.pulse{
-		width: 50px;
+		width: 60px;
 		position: fixed;
-		bottom: 35px;
+		bottom: 50px;
 		right: 25px;
   }
+  img#contatoW{
+	bottom: 125px;
+}
   /* CSS Portifolio pages */
   body{
 	background-color: #fbfbfb!important;
@@ -1453,7 +1465,7 @@ body > div.loader > div > div > p{
 		height: auto;
 		z-index: 10;
 		
-		// Increasing top margin for mobile
+		
 		@media screen and (max-width: 768px) { margin-top: 10%; }
 		@media screen and (max-width: 414px) { margin-top: 13%; }
 	}
@@ -1572,6 +1584,22 @@ body {
 	font-size: 14pt;
 	text-decoration: none!important;
 }
+.mouseEvento-h{
+    left: 1%!important;
+    top: important;
+    width: 98%!important;
+    background-color: #3339;
+    /* background-image: url(../img/lupa.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    height: 300px!important;
+    color: #fff!important;
+    /* padding-top: 19%; */
+    font-size: 15pt;
+    text-decoration: none!important;
+    line-height: 300px;
+}
 #projetos > li{
 	margin-left: .5%;
 	margin-right: .5%;
@@ -1622,10 +1650,9 @@ body {
 	white-space: nowrap;
 }
 .saiba-mais-port {
-	position: absolute;
-    right: 16%;
-    bottom: 21%;
-    font-size: 10pt;
+	position: relative;
+    left: 0%;
+    font-size: 11pt;
 }
 .card-port{
 	padding: 1%;
@@ -1646,3 +1673,18 @@ body {
     background-position: center;
     background-size: cover;
 }
+.navbar-center{
+	display: flex!important;
+    margin-right: 15%!important;
+    margin-left: 15%!important;
+    float: none;
+    text-align: center;
+  }
+  #parceiros img{
+	  width: 60%;
+  }
+  .txt-portilofolio-desc{
+	  text-align: justify;
+	  font-size: 11pt;
+  }
+  
