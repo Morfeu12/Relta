@@ -6,12 +6,12 @@ function menuNavegacao(id) {
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
                         class="fa fa-bars"></i></button>
-                <a class="navbar-brand animate" onclick="recarregar('../index.html')"><img src="../img/logo.png" alt="logo1"></a>
+                <a class="navbar-brand animate" onclick="recarregar('../index.php')"><img src="../img/logo.png" alt="logo1"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-center animate">
-                    <li class="nav-li"><a id="menu-1" onclick="recarregar('../index.html')"></a></li>
-                    <li class="nav-li"><a id="menu-2" onclick="recarregar('../index.html#services')"></a></li>
+                    <li class="nav-li"><a id="menu-1" onclick="recarregar('../index.php')"></a></li>
+                    <li class="nav-li"><a id="menu-2" onclick="recarregar('../index.php#services')"></a></li>
                     <li class="nav-li"><a id="menu-3" href="#"></a><div uk-dropdown="offset: 0">
                             <ul class="uk-nav uk-dropdown-nav">
                                 <li><a href="casa-gp.html">Casa GP</a></li>
@@ -22,7 +22,7 @@ function menuNavegacao(id) {
                                 <li><a href="vila-madalena.html">Vila Madalena</a></li>
                             </ul>
                         </div></li>
-                    <li class="nav-li"><a id="menu-4" onclick="recarregar('../index.html#about')"></a></li>
+                    <li class="nav-li"><a id="menu-4" onclick="recarregar('../index.php#about')"></a></li>
                     <li class="nav-li"><a id="menu-5" uk-toggle="target: #modal-close-default"></a></li>
                     <li class="nav-li">
                         <span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
@@ -233,10 +233,10 @@ function addPortfolio(id) {
                             <li class="uk-transition-toggle" tabindex="0">
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <a onclick="recarregar('../index.html')"><img src="../img/logo.png" alt="Relta"></a>
+                                        <a onclick="recarregar('../index.php')"><img src="../img/logo.png" alt="Relta"></a>
                                     </div>
                                     <div class="uk-card-body" style="text-align:center;">
-                                        <a class="uk-link-heading uk-button-text oc-heading-small" onclick="recarregar('../index.html')">Relta</a>
+                                        <a class="uk-link-heading uk-button-text oc-heading-small" onclick="recarregar('../index.php')">Relta</a>
                                         <p>Relta.com.br</p>
                                     </div>
                                 </div>
@@ -282,7 +282,7 @@ function contato() {
 		<div class="uk-modal-dialog uk-modal-body" style="width: 80%; height: 100%;padding:0px;">
 			<button class="uk-modal-close-default" type="button" uk-close></button>
 			<div id="obj-contato" style="width: 100%;height:100%;">
-				<iframe id="contato-iframe" src="../ContactFrom_v17/index.html" scrolling="yes"
+				<iframe id="contato-iframe" src="../ContactFrom_v17/index.php" scrolling="yes"
 				style="width: 100%; height: 100%;"></iframe>
 			</div>
 		</div>
